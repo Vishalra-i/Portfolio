@@ -1,7 +1,8 @@
 import React from 'react'
-import HamburgerMenu from './Hamburger'
+import useTheme from '../context/Theme'
 
 function Home() {
+
    
   (function service() {
      let name = ["Mern Stack","React","Full Stack","Front-End","Back-End"]
@@ -32,6 +33,8 @@ function Home() {
 
   })()
 
+  const {darkmode,lightmode,mode,thememode} = useTheme()
+
   return (
     <div className='flex justify-between flex-col lg:h-screen md:h-screen sm:h-full md:flex-row  lg:flex-row xl:flex-row 2xl:flex-row sm:px-5 md:px-11 lg:px-24 py-10 w-full bg-[#00000000] dark:bg-[#292626] dark:text-white  text-4xl'>
           <div className='flex  py-20 md:py-15  px-10 md:px-5 sm:px-2 lg:gap-12 max-sm:gap-6 sm:gap-5 sm:item-center md:item-center flex-col'>
@@ -50,7 +53,9 @@ function Home() {
           </div>
           
           <div className=''>
-          <img src= ".\.\src\assets\hi.svg" width="420px" height="420px" alt="" />
+          
+          <img src="https://derecho.pl/images/iot-platform.svg" alt="" />
+          
           
           </div>
          

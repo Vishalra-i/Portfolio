@@ -2,7 +2,7 @@ import React from 'react'
 import useTheme from '../context/Theme'
 
 function Button() {
-    const {darkmode,lightmode,thememode,mode} = useTheme()
+    const {darkmode,lightmode,mode,thememode} = useTheme()
     const onClickchange = (e)=>{
           if(mode)lightmode()
           else darkmode()
