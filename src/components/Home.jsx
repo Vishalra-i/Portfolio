@@ -37,7 +37,7 @@ function Home() {
 
   return (
     <div className='flex justify-between flex-col lg:h-screen md:h-screen sm:h-full md:flex-row  lg:flex-row xl:flex-row 2xl:flex-row sm:px-5 md:px-11 lg:px-24 py-10 w-full bg-[#00000000] dark:bg-[#292626] dark:text-white  text-4xl'>
-          <div className='flex  py-20 md:py-15  px-10 md:px-5 sm:px-2 lg:gap-12 max-sm:gap-6 sm:gap-5 sm:item-center md:item-center flex-col'>
+          <div className='flex  py-20 md:py-15  px-5 md:px-5 sm:px-2 lg:gap-12 max-sm:gap-6 sm:gap-5 sm:item-center md:item-center flex-col'>
               <h1 className='animate-bounce max-sm:text-[2.1rem] sm:text-[2.5rem] md:text-[3.0rem] lg:text-[5.0rem] xl:text-[5.5rem] 2xl:text-[7.0rem]   font-semibold text-gray-700  font-["poppins"] ' id='service'></h1>
               <h1 className='max-sm:text-[2.0rem] sm:text-[2.3rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[6.7rem]  font-semibold font-["poppins"]' id='devlop'>Developer</h1>
                <div className=''>
@@ -52,9 +52,9 @@ function Home() {
                </div>
           </div>
           
-          <div className=''>
+          <div className='max-sm:w-full sm:w-full md:w-1/2 max-lg:w-1/2 px-5'>
           
-          <img src="https://derecho.pl/images/iot-platform.svg" alt="" />
+          <img src="https://finwave.co/images/gif/Platform-Tools-04_v1.gif" alt="" />
           
           
           </div>
