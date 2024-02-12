@@ -32,7 +32,7 @@ function Home() {
   const { darkmode, lightmode, mode, thememode } = useTheme();
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between h-screen px-5 py-5 sm:px-2 md:px-11 lg:px-24 w-full bg-[#00000000] dark:bg-[#292626] dark:text-white text-4xl">
+    <div className="flex flex-col lg:flex-row justify-between h-screen px-5 py-20 sm:px-2 md:px-11 lg:px-24 w-full  dark:bg-[#160E2A] dark:text-white text-4xl">
       {/* Left Section */}
       <div className="flex flex-col justify-center py-5 lg:justify-normal lg:py-16 gap-8 max-w-full ">
         {/* Service Name */}

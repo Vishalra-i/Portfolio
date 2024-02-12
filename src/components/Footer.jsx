@@ -7,7 +7,9 @@ export default function Footer() {
 
 
   return (
-      <footer className="bg-[#142419] dark:bg-black  boxShadow-3xl dark:text-white border-black dark:border-white border-y">
+    <footer className="w-full h-full pt-[2px] hover:to-yellow-400 hover:from-red-500 bg-gradient-to-l to-blue-600 via-pink-700 from-purple-900">
+      <div className= "bg-black  boxShadow-3xl dark:text-white">
+        
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
               <div className="md:flex md:justify-between">
                   <div className="mb-6 md:mb-0">
@@ -17,7 +19,7 @@ export default function Footer() {
                   </div>
                   <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                       <div>
-                          <h2 className="mb-6 text-sm font-bold text-[#000] dark:text-white  uppercase">Resources</h2>
+                          <h2 className="mb-6 text-sm font-bold text-white  uppercase">Resources</h2>
                           <ul className="text-blue-500 font-medium">
                               <li className="mb-4">
                                   <Link to="/" className="hover:underline">
@@ -32,7 +34,7 @@ export default function Footer() {
                           </ul>
                       </div>
                       <div>
-                          <h2 className="mb-6 text-sm font-bold text-[#000] dark:text-white uppercase">Follow us</h2>
+                          <h2 className="mb-6 text-sm font-bold text-white uppercase">Follow us</h2>
                           <ul className="text-blue-500 font-medium">
                               <li className="mb-4">
                                   <a
@@ -52,7 +54,7 @@ export default function Footer() {
                           </ul>
                       </div>
                       <div>
-                          <h2 className="mb-6 text-sm font-bold text-[#000] dark:text-white uppercase">Legal</h2>
+                          <h2 className="mb-6 text-sm font-bold text-white uppercase">Legal</h2>
                           <ul className="text-blue-500 font-medium">
                               <li className="mb-4">
                                   <Link to="#" className="hover:underline">
@@ -68,10 +70,10 @@ export default function Footer() {
                       </div>
                   </div>
               </div>
-              <hr className="my-6 border-black dark:border-blue-200 sm:mx-auto lg:my-8" />
+              <hr className="my-6 border-blue-200 sm:mx-auto lg:my-8" />
               <div className="sm:flex sm:items-center sm:justify-between">
                   <span className="text-sm text-blue-500 sm:text-center">
-                      © 2023 
+                      © 2024 
                       <a href="#" className="hover:underline">
                            Vishal Rai
                       </a>
@@ -157,6 +159,7 @@ export default function Footer() {
                   </div>
               </div>
           </div>
+      </div>
       </footer>
   );
 }
