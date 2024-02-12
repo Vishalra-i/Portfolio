@@ -7,22 +7,18 @@ export default function Footer() {
 
 
   return (
-      <footer className="bg-white dark:bg-black  boxShadow-3xl dark:text-white border-y">
+      <footer className="bg-[#142419] dark:bg-black  boxShadow-3xl dark:text-white border-black dark:border-white border-y">
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
               <div className="md:flex md:justify-between">
                   <div className="mb-6 md:mb-0">
                       <Link to="/" className="flex items-center">
-                          <img
-                              src={thememode === "dark"?"./src/assets/Vishal Rai.png":"./src/assets/lightlogo.png"}
-                              className="mr-3 md:w-24 max-lg:w-24 md:h-12 max-lg:h-12 max-sm:w-12 max-sm:h-7 sm:h-7 sm:w-12"
-                              alt="Logo"
-                          />
+                      <h1 class="text-2xl font-bold font-protest  text-center  text-transparent bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text animate-slideInFromLeft"> &lt; Vishal Rai &gt;</h1>
                       </Link>
                   </div>
                   <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                       <div>
-                          <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-                          <ul className="text-gray-500 font-medium">
+                          <h2 className="mb-6 text-sm font-bold text-[#000] dark:text-white  uppercase">Resources</h2>
+                          <ul className="text-blue-500 font-medium">
                               <li className="mb-4">
                                   <Link to="/" className="hover:underline">
                                       Home
@@ -36,8 +32,8 @@ export default function Footer() {
                           </ul>
                       </div>
                       <div>
-                          <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-                          <ul className="text-gray-500 font-medium">
+                          <h2 className="mb-6 text-sm font-bold text-[#000] dark:text-white uppercase">Follow us</h2>
+                          <ul className="text-blue-500 font-medium">
                               <li className="mb-4">
                                   <a
                                       href="https://github.com/Vishalra-i"
@@ -56,8 +52,8 @@ export default function Footer() {
                           </ul>
                       </div>
                       <div>
-                          <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                          <ul className="text-gray-500 font-medium">
+                          <h2 className="mb-6 text-sm font-bold text-[#000] dark:text-white uppercase">Legal</h2>
+                          <ul className="text-blue-500 font-medium">
                               <li className="mb-4">
                                   <Link to="#" className="hover:underline">
                                       Privacy Policy
@@ -72,9 +68,9 @@ export default function Footer() {
                       </div>
                   </div>
               </div>
-              <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+              <hr className="my-6 border-black dark:border-blue-200 sm:mx-auto lg:my-8" />
               <div className="sm:flex sm:items-center sm:justify-between">
-                  <span className="text-sm text-gray-500 sm:text-center">
+                  <span className="text-sm text-blue-500 sm:text-center">
                       © 2023 
                       <a href="#" className="hover:underline">
                            Vishal Rai
@@ -82,7 +78,7 @@ export default function Footer() {
                       . All Rights Reserved.
                   </span>
                   <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                      <Link to="#" className="text-gray-500 hover:text-gray-900">
+                      <Link to="#" className="text-blue-500 hover:text-blue-900">
                           <svg
                               className="w-4 h-4"
                               aria-hidden="true"
@@ -98,7 +94,7 @@ export default function Footer() {
                           </svg>
                           <span className="sr-only">Facebook page</span>
                       </Link>
-                      <Link to="#" className="text-gray-500">
+                      <Link to="#" className="text-blue-500">
                           <svg
                               className="w-4 h-4"
                               aria-hidden="true"
@@ -110,7 +106,7 @@ export default function Footer() {
                           </svg>
                           <span className="sr-only">Discord community</span>
                       </Link>
-                      <Link to="#" className="text-gray-500">
+                      <Link to="#" className="text-blue-500">
                           <svg
                               className="w-4 h-4"
                               aria-hidden="true"
@@ -126,7 +122,7 @@ export default function Footer() {
                           </svg>
                           <span className="sr-only">Twitter page</span>
                       </Link>
-                      <Link to="#" className="text-gray-500">
+                      <Link to="#" className="text-blue-500">
                           <svg
                               className="w-4 h-4"
                               aria-hidden="true"
@@ -142,7 +138,7 @@ export default function Footer() {
                           </svg>
                           <span className="sr-only">GitHub account</span>
                       </Link>
-                      <Link to="#" className="text-gray-500">
+                      <Link to="#" className="text-blue-500">
                           <svg
                               className="w-4 h-4"
                               aria-hidden="true"

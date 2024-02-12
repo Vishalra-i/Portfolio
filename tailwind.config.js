@@ -22,9 +22,21 @@ export default {
       },
       boxShadow: {
         '3xl': '50px 35px 60px 55px red',
+      },
+      animation:{
+        slideInFromLeft: "slideInFromLeft 3s ease-in-out"
+      },
+      keyframes:{
+        slideInFromLeft:{
+          "0%":{transform: "translateX(-100%)"},
+          "100%":{transform: "translateX(0%)"},
+          
+        }
       }
-    },
-  }, // Comma removed here
+    }
+            
+      
+    }, // Comma removed here
 
 
 }

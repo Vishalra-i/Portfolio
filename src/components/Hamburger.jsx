@@ -10,37 +10,17 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden md:hidden">
       <button
         className="text-[#000] dark:text-white font-bold text-2xl focus:outline-none"
         onClick={toggleMenu}
       >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
           {isOpen ? (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          ) : (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          )}
-        </svg>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/delete-sign.png" alt="delete-sign"/>           
+             ) : (
+            <img width="48" height="48" src="https://img.icons8.com/office/48/xbox-menu.png" alt="xbox-menu"/>             )}
       </button>
 
-      {/* Menu items */}
       {isOpen && (
         <div className="absolute top-15 p-2 transition transform right-0 md:hidden  z-10">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-[#9b9696] dark:bg-black divide-y-2 divide-gray-50">
