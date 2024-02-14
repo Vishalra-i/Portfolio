@@ -1,7 +1,36 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
+
+
+
+  
 
 // Contact component
 function Contact() {
+  const form = useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    console.log(form.current,form.current.name)
+
+    // emailjs
+    //   .sendForm('service_940b5qr', 'template_wcfptnr', form.current,{
+    //     publicKey: 'L6syCOqMtIxfphNb_',
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log('SUCCESS! Email Sent');
+    //       alert("Thank You")
+    //     },
+    //     (error) => {
+    //       console.log('FAILED...', error.text);
+    //     },
+    //   );
+  };
+
   return (
     // Container with gradient background
     <div className='min-w-full relative flex justify-center items-center min-h-screen px-10 py-24 lg:py-36 bg-gradient-to-br from-[#dfe0e6] via-[#5e234f] to-[#0a1346]' id="container">
@@ -12,7 +41,7 @@ function Contact() {
           <img className='max-h-[30px] mx-2 max-w-[30px]  brightness-150 ' src="https://img.icons8.com/ios-filled/50/228BE6/like--v1.png" alt="like--v1"/>
           <section className='w-[90%]'>
             <p className='font-bold text-xl font-poppins'>Hello, Let's get in touch</p>
-            <form action="" className='py-10 flex flex-col  gap-10'>
+            <form ref={form} onSubmit={sendEmail} className='py-10 flex flex-col  gap-10'>
                       <input type="text" placeholder='Enter Your Name'   
                       className='border-b-2 border-0 placeholder:text-white border-black dark:border-gray-400 dark:bg-black outline-none'
                       name="" id="" />            

@@ -32,18 +32,18 @@ function Home() {
   const { darkmode, lightmode, mode, thememode } = useTheme();
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between h-screen px-5 py-20 sm:px-2 md:px-11 lg:px-24 w-full  dark:bg-[#160E2A] dark:text-white text-4xl">
+    <div className="flex flex-col box-border  lg:flex-row  lg:justify-between h-screen px-5 py-20 sm:px-2 md:px-11 lg:px-24 w-full  dark:bg-[#160E2A] dark:text-white text-4xl">
       {/* Left Section */}
       <div className="flex flex-col justify-center py-5 lg:justify-normal lg:py-16 gap-8 max-w-full ">
         {/* Service Name */}
         <div>
         <h1
-          className="animate-bounce text-6xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-7xl font-semibold text-gray-700 font-poppins"
+          className="animate-bounce text-6xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-7xl font-semibold text-gray-700 font-poppins"
           id="service"
         ></h1>
         {/* Developer Label */}
         <h1
-          className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold font-poppins"
+          className="text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold font-poppins"
           id="devlop"
         >
           Developer
@@ -93,7 +93,7 @@ function Home() {
       </div>
 
       {/* Right Section */}
-      <div className="max-w-full md:w-1/2 lg:w-auto px-5">
+      <div className="min-w-1/2  lg:w-auto px-5 py-5">
         {/* Image */}
         <img
           src="https://finwave.co/images/gif/Platform-Tools-04_v1.gif"
