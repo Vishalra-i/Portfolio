@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* The switch - the box around the slider */
+img{
+  display: inline;
+  
+}
 .switch {
     font-size: 17px;
     position: relative;

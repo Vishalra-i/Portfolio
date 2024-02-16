@@ -32,10 +32,10 @@ function Home() {
   const { darkmode, lightmode, mode, thememode } = useTheme();
 
   return (
-    <div className="max-w-screen mx-auto">
-      <div className="flex flex-col lg:flex-row px-5 py-20 sm:px-2 md:px-11 lg:px-24 dark:bg-[#160E2A] dark:text-white text-4xl">
+    <div className="min-w-full min-h-screen dark:bg-[#160E2A]">
+      <div className="flex flex-col items-center max-[1024px]:justify-between lg:flex-row px-5 py-20 sm:px-2 md:px-11 lg:px-24  dark:text-white text-4xl">
         {/* Left Section */}
-        <div className="flex flex-col justify-center lg:justify-start lg:py-16 gap-8 max-w-full">
+        <div className="flex flex-col flex-grow justify-center lg:justify-start lg:py-16 gap-8 ma-w-full">
           {/* Service Name */}
           <div>
             <h1
@@ -88,6 +88,7 @@ function Home() {
                   alt="twitter--v1"
                 />
               </a>
+              
             </div>
           </div>
         </div>

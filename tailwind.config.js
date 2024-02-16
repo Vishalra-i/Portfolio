@@ -24,13 +24,17 @@ export default {
         '3xl': '50px 35px 60px 55px red',
       },
       animation:{
-        slideInFromLeft: "slideInFromLeft 3s ease-in-out"
+        slideInFromLeft: "slideInFromLeft  ease-in-out",
+        slide: "slide 5s infinite linear"
       },
       keyframes:{
         slideInFromLeft:{
           "0%":{transform: "translateX(-100%)"},
           "100%":{transform: "translateX(0%)"},
-          
+        },
+        slide:{
+          "from":{transform: "translateX(0)"},
+          "to":{transform: "translateX(-100%)"}
         }
       }
     }
