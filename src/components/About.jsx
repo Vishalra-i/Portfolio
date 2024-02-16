@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards from './cards';
+import Cards from './Cards';
 function About() {
   const skillsTech = [
     "https://skillicons.dev/icons?i=html,css,tailwind",
