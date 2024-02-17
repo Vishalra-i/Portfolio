@@ -25,7 +25,7 @@ export default {
       },
       animation:{
         slideInFromLeft: "slideInFromLeft  ease-in-out",
-        slide: "slide 5s infinite linear"
+        slide: "slide 35s infinite linear"
       },
       keyframes:{
         slideInFromLeft:{

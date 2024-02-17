@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import useTheme from '../context/Theme'
 import HamburgerMenu from './Hamburger'
 import Headlink from './Headlink'
-import Button from './Button'
+import Toggle from './Toggle'
 
 
 function Header() {
@@ -20,7 +20,7 @@ function Header() {
                <Headlink/>
            </div>
          
-        <Button/> 
+        <Toggle/> 
         <HamburgerMenu/>
     </div>
     </>

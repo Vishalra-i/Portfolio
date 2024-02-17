@@ -1,5 +1,12 @@
 import React from 'react';
+<<<<<<< HEAD
 import Cards from './Cards';
+=======
+import Cards from './cards';
+import SlideTrack from './SlideTrack';
+import Button from './Button';
+import { Link } from 'react-router-dom';
+>>>>>>> 65b1324 (Added New Features)
 function About() {
   const skillsTech = [
     "https://skillicons.dev/icons?i=html,css,tailwind",
@@ -20,6 +27,7 @@ function About() {
           <div className='self-center px-5'>
             <h1 className='text-3xl '>Vishal Rai</h1>
             <p className='flex-shrink'>Jashpurnagar Chhattisgarh , India</p>
+            
           </div>
         </div>
         <div className='self-center font-bold px-5 py-5 space-y-5 text-white font-poppins'>
@@ -86,6 +94,7 @@ function About() {
 
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>About</h1>
            <p className='  font-bold border-solid border-3 border-gray-300'>Passionate Full Stack Developer with expertise in MERN Stack and strong proficiency in ReactJS. Excels in teamwork, fostering effective communication, and demonstrating brilliant interpersonal skills. Proven ability to collaborate with cross-functional teams to drive projects to success. Adept at coding and leveraging creativity to develop innovative solutions. Constantly exploring the digital realm and committed to staying at the forefront of tech innovation.</p>
+           <Link to='/contact'> <Button children='Contact Me' /> </Link>
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>Certification</h1>
            <div className='flex flex-row justify-start gap-2 p-5 lg:px-10 lg:gap-10  overflow-hidden'>
                <Cards head="PW SKills" para="Full Stack Devloper" view="View"  color="Yellow" link="https://www.hackerrank.com/certificates/3a3b48dc2de2"/>
@@ -93,36 +102,8 @@ function About() {
                <Cards head="Hacker Rank" para="Problem Solving" view="View"  color="green" link="https://www.hackerrank.com/certificates/c557673d505e"/>
            </div>
            <h1 className='font-semibold text-gray-500 font-poppins text-3xl'>Skills</h1>
-           <div id="logos" className='overflow-hidden flex flex-row  justify-between  whitespace-nowrap py-10 px-0'>
-               <div id="logo-slider " className='  animate-slide  space-x-32'>
-
-                 <img src="https://skillicons.dev/icons?i=html" className='h-20 w-20 mx-10' alt="" />
-                 
-                 <img src="https://skillicons.dev/icons?i=css" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=js" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=python" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=react" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=tailwind" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=node" className='h-20 w-20 mx-10' alt="" />
-
-
-                 <img src="https://skillicons.dev/icons?i=mongodb" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=express" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=firebase" className='h-20 w-20 mx-10' alt="" />
-
-                 <img src="https://skillicons.dev/icons?i=appwrite" className='h-20 w-20 mx-10' alt="" />
-
-
-               </div>
+            <SlideTrack/>
               
-           </div>
            
 
 

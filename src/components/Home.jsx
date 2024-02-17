@@ -1,6 +1,8 @@
 import React from 'react';
 import useTheme from '../context/Theme';
-
+import SlideTrack from './SlideTrack';
+import { Link } from 'react-router-dom';
+import Button from './Button';
 function Home() {
   // Function for rotating service names and changing colors
   (function service() {
@@ -90,6 +92,10 @@ function Home() {
               </a>
               
             </div>
+            {/* Button */}
+            <Link to="/about">
+                <Button children='About Me'/>
+            </Link>
           </div>
         </div>
 
@@ -103,6 +109,7 @@ function Home() {
           />
         </div>
       </div>
+      <SlideTrack/>
     </div>
   );
 }
