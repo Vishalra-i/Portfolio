@@ -7,7 +7,7 @@ export default function Footer() {
 
 
   return (
-    <footer className="w-full mx-auto h-full pt-[2px] hover:to-yellow-400 hover:from-red-500 bg-gradient-to-l to-blue-600 via-pink-700 from-purple-900">
+    <footer className="w-full mx-auto h-full pt-[2px] animate-switch">
       <div className= "bg-black  boxShadow-3xl dark:text-white">
         
           <div className=" w-full max-w-screen p-4 px-10 py-6 lg:py-8">

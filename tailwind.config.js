@@ -25,7 +25,8 @@ export default {
       },
       animation:{
         slideInFromLeft: "slideInFromLeft  ease-in-out",
-        slide: "slide 35s infinite linear"
+        slide: "slide 35s infinite linear",
+        switch:"switch 5s infinite linear"
       },
       keyframes:{
         slideInFromLeft:{
@@ -35,6 +36,11 @@ export default {
         slide:{
           "from":{transform: "translateX(0)"},
           "to":{transform: "translateX(-100%)"}
+        },
+        switch:{
+          "0%":{background: " linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)"},
+          "50%":{background: "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)"},
+          "100%":{background: "linear-gradient(90deg, rgba(73,224,177,1) 0%, rgba(85,29,253,1) 50%, rgba(252,69,106,1) 100%)"}
         }
       }
     }

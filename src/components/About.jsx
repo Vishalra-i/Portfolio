@@ -19,7 +19,7 @@ function About() {
       {/* Contact section */}
       <div className="flex flex-col justify-between lg:flex-row max-w-full bg-no-repeat bg-cover bg-[url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=400')]  text-white py-28 bg-black">
         <div className='font-bold px-5 py-5 font-poppins flex justify-between'>
-          <img src="https://lh3.googleusercontent.com/a/ACg8ocLlQvKi1HdFf8vdgIi9PkLztZ0s8f0XIGbs4TQIfO-pMWnF=s288-c-no" className='max-h-36 max-w-36 rounded-full' alt="" />
+          <img src="https://avatars.githubusercontent.com/u/135126334?v=4" className='max-h-36 max-w-36 rounded-full' alt="" />
           <div className='self-center px-5'>
             <h1 className='text-3xl '>Vishal Rai</h1>
             <p className='flex-shrink'>Jashpurnagar Chhattisgarh , India</p>
@@ -60,11 +60,11 @@ function About() {
             {/* Github */}
             <a href="https://github.com/Vishalra-i">
             <button
-                class="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative bg-neutral-900 px-10 py-4 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-sky-900 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
+                class="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative bg-neutral-900 px-10 py-[11px] border text-left p-4 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-sky-900 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
               >
                 <svg
                   class="w-6 h-6 fill-neutral-50"
-                  height="100"
+                  height="80"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 100 100"
                   width="100"
@@ -89,11 +89,11 @@ function About() {
         <div className='min-w-full relative space-y-6  min-h-screen mx-auto py-5  ' id="container">
 
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>About</h1>
-           <p className='  font-bold border-solid border-3 border-gray-300'>Passionate Full Stack Developer with expertise in MERN Stack and strong proficiency in ReactJS. Excels in teamwork, fostering effective communication, and demonstrating brilliant interpersonal skills. Proven ability to collaborate with cross-functional teams to drive projects to success. Adept at coding and leveraging creativity to develop innovative solutions. Constantly exploring the digital realm and committed to staying at the forefront of tech innovation.</p>
-           <Link to='/contact'> <Button children='Contact Me' /> </Link>
+           <p className='  font-bold border-solid border-3  border-gray-300'>Passionate Full Stack Developer with expertise in MERN Stack and strong proficiency in ReactJS. Excels in teamwork, fostering effective communication, and demonstrating brilliant interpersonal skills. Proven ability to collaborate with cross-functional teams to drive projects to success. Adept at coding and leveraging creativity to develop innovative solutions. Constantly exploring the digital realm and committed to staying at the forefront of tech innovation.</p>
+           <Link to='/contact'> <Button children='Contact Me' className='my-5' /> </Link>
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>Certification</h1>
            <div className='flex flex-row justify-start gap-2 p-5 lg:px-10 lg:gap-10  overflow-hidden'>
-               <Cards head="PW SKills" para="Full Stack Devloper" view="View"  color="Yellow" link="https://www.hackerrank.com/certificates/3a3b48dc2de2"/>
+               <Cards head="PW SKills" para="Full Stack Devloper" view="View"  color="purple" link="https://learn.pwskills.com/certificate/c315d754-5b18-4876-bc80-0e9385d8db07"/>
                <Cards head="Hacker Rank" para="Javascript Intermediate" view="View"  color="Blue" link="https://www.hackerrank.com/certificates/3a3b48dc2de2"/>
                <Cards head="Hacker Rank" para="Problem Solving" view="View"  color="green" link="https://www.hackerrank.com/certificates/c557673d505e"/>
            </div>
