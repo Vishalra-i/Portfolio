@@ -1,12 +1,8 @@
 import React from 'react';
-<<<<<<< HEAD
-import Cards from './Cards';
-=======
-import Cards from './cards';
 import SlideTrack from './SlideTrack';
 import Button from './Button';
 import { Link } from 'react-router-dom';
->>>>>>> 65b1324 (Added New Features)
+import Cards from './Cards.jsx'
 function About() {
   const skillsTech = [
     "https://skillicons.dev/icons?i=html,css,tailwind",
