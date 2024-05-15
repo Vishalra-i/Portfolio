@@ -4,16 +4,16 @@ import { NavLink } from 'react-router-dom'
 function Headlink() {
   return (
     <>
-      <NavLink to="/" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-xl`}>
+      <NavLink to="/" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-sm md:text-xl`}>
                   Home
                </NavLink>
-               <NavLink to="/about" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-xl`}>
+               <NavLink to="/about" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-sm md:text-xl`}>
                   About
                </NavLink>
-               <NavLink to="/project" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-xl`}>
+               <NavLink to="/project" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-sm md:text-xl`}>
                   Project
                </NavLink>
-               <NavLink to="/contact" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-xl`}>
+               <NavLink to="/contact" className={({isActive})=>` ${isActive ?"text-blue-700 ": "text-gray-700"} text-sm md:text-xl`}>
                   Contact
                </NavLink>
     </>

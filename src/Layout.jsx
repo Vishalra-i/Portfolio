@@ -7,6 +7,7 @@ import Theme, { Themeprovider } from './context/Theme'
 function Layout() {
   const [thememode, setThememode] = useState("dark")
   const [mode, setmode] = useState(true)
+  const [loading , setLoading] = useState(true)
 
      let darkmode = ()=>{
        setThememode("dark")
@@ -17,6 +18,13 @@ function Layout() {
        setmode(false)
      }
 
+     (function(){
+        setTimeout(() => {
+          setLoading(false)
+        }, 2000)
+     })()
+
+
   useEffect(() => {
     
       let html = document.querySelector("html")
@@ -24,6 +32,7 @@ function Layout() {
         html.classList = thememode
     
   }, [thememode,mode])
+
   return (
     <Themeprovider value={{thememode,darkmode,lightmode,mode}}>
        <Header/>

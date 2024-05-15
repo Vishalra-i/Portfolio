@@ -22,9 +22,9 @@ const HamburgerMenu = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-15 p-2 transition transform right-0 md:hidden  z-10">
+        <div className="absolute top-15 p-2 transition transform left-0  md:hidden  z-10">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-[#9b9696] dark:bg-black divide-y-2 divide-gray-50">
-            <div className=" flex flex-col px-5 py-2 font-bold tex-2xl gap-6 ">
+            <div className=" flex flex-row px-5 py-2 font-bold tex-2xl gap-6 ">
                <Headlink/>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import SlideTrack from './SlideTrack';
-import Button from './Button';
+import SlideTrack from '../components/SlideTrack.jsx';
+import Button from '../components/Button.jsx';
 import { Link } from 'react-router-dom';
-import Cards from './Cards.jsx'
+import Cards from '../components/Cards.jsx'
 function About() {
   const skillsTech = [
     "https://skillicons.dev/icons?i=html,css,tailwind",
@@ -17,7 +17,7 @@ function About() {
   return (
     <>
       {/* Contact section */}
-      <div className="flex flex-col justify-between lg:flex-row max-w-full bg-no-repeat bg-cover bg-[url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=400')]  text-white py-28 bg-black">
+      <div className="flex flex-col  justify-between lg:flex-row max-w-full bg-no-repeat bg-cover bg-[url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=400')]  text-white py-28">
         <div className='font-bold px-5 py-5 font-poppins flex justify-between'>
           <img src="https://avatars.githubusercontent.com/u/135126334?v=4" className='max-h-36 max-w-36 rounded-full' alt="" />
           <div className='self-center px-5'>
@@ -85,7 +85,7 @@ function About() {
         </div>
       </div>
        {/* Main Content */}
-        <div className='min-h-screen px-5 py-10 dark:bg-[#160E2A] dark:text-white'>
+        <div className='min-h-screen px-5 py-10 bg-[#a55eea] dark:bg-[#160E2A] dark:text-white'>
         <div className='min-w-full relative space-y-6  min-h-screen mx-auto py-5  ' id="container">
 
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>About</h1>

@@ -1,8 +1,8 @@
 import React from 'react';
 import useTheme from '../context/Theme';
-import SlideTrack from './SlideTrack';
+import SlideTrack from '../components/SlideTrack';
 import { Link } from 'react-router-dom';
-import Button from './Button';
+import Button from '../components/Button';
 function Home() {
   // Function for rotating service names and changing colors
   (function service() {
@@ -34,7 +34,7 @@ function Home() {
   const { darkmode, lightmode, mode, thememode } = useTheme();
 
   return (
-    <div className="min-w-full min-h-screen dark:bg-[#160E2A]">
+    <div className="min-w-full min-h-screen bg-[#a55eea] dark:bg-[#160E2A]">
       <div className="flex flex-col items-center max-[1024px]:justify-between lg:flex-row px-5 py-20 sm:px-2 md:px-11 lg:px-24  dark:text-white text-4xl">
         {/* Left Section */}
         <div className="flex flex-col flex-grow justify-center lg:justify-start lg:py-16 gap-8 ma-w-full">
@@ -56,7 +56,7 @@ function Home() {
           {/* Bio */}
           <div>
             <p className="text-2xl sm:text-lg md:text-2xl max-lg:text-2xl text-gray-500 dark:text-white font-protest">
-              Hi, I'm <span className="text-red-300">Vishal Rai</span>. A Passionate Full Stack
+              Hi, I'm <span className="text-[#3867d6]">Vishal Rai</span>. A Passionate Full Stack
             </p>
             <p className="text-2xl sm:text-lg md:text-2xl max-lg:text-2xl text-gray-500 dark:text-white font-protest">
               Developer from Jashpur, India📍

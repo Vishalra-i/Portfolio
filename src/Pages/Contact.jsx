@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import conf from '../conf/conf';
-
+import conf  from '../conf/conf.js'
 
 
 
@@ -13,14 +12,15 @@ function Contact() {
   const form = useRef();
   const [feedback, setFeedback] = React.useState('');
   
-  const sendEmail = (e) => {
+  const sendEmail = async(e) => {
     e.preventDefault();
+    setFeedback('Sending...');
 
     if(form.current.name.value === 'customer_name' || form.current.email.value === '' || form.current.message.value === ''){
       alert("Please fill all the fields")
       return
     }
-    emailjs
+    await emailjs
       .sendForm(conf.EmailJs_SeviceID, conf.EmailJs_TemplateID, form.current,{
         publicKey: conf.EmailJs_PublicKey,
       })
