@@ -14,7 +14,7 @@ function Header() {
             &lt; Vishal Rai &gt;
           </h1>
         </Link> */}
-        <div className="fixed z-10  flex justify-between bg-black rounded-[30px] px-6 py-4 border border-gray-800 bottom-28 md:top-5 items-center h-[60px] w-[360px] md:w-[40%]">
+        <div className="fixed z-10  flex justify-between bg-black rounded-[30px] px-6 py-4 border border-gray-800 bottom-5 md:top-5 items-center h-[60px] w-[360px] md:w-[40%]">
           <div className=" md:flex max-lg:flex justify-between items-center w-full flex-row gap-9 font-extrabold px-2">
             <Headlink />
           </div>

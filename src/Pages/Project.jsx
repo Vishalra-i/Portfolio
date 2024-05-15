@@ -20,14 +20,14 @@ function Project() {
  
   return (
     <div className="min-w-full min-h-screen bg-[#a55eea] dark:bg-[#121212] dark:text-white">
-      <div className="px-5 py-20 sm:px-2 md:px-11 lg:px-24 flex justify-between dark:text-white text-4xl">
+      {/* <div className="px-5 py-20 sm:px-2 md:px-11 lg:px-24 flex justify-between dark:text-white text-4xl">
          <img src={data.avatar_url} className="rounded-full shadow-2xl dark:shadow-purple-300 shadow-purple-900" alt="" />
          <div className='self-center w-1/2 gap-5'>
            <h1>{data.bio}</h1>
           <Link to={data.html_url}><Button children='GitHub Repositary' className='mt-5'/></Link> 
          </div>
 
-      </div>
+      </div> */}
          <div className='w-full px-20 py-2 '>
             <h1 className='text-center'>My Project</h1>
             <ProjectItem name={"Blog App"} description={`
