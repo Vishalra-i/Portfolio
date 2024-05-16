@@ -2,15 +2,11 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import conf  from '../conf/conf.js'
 
-
-
-
-  
-
 // Contact component
 function Contact() {
   const form = useRef();
   const [feedback, setFeedback] = React.useState('');
+ 
   
   const sendEmail = async(e) => {
     e.preventDefault();
@@ -26,28 +22,30 @@ function Contact() {
       })
       .then(
         () => {
-          console.log('SUCCESS! Email Sent');
+          
           setFeedback(
             'Thanks for reaching out! I will get back to you shortly.',
           );
           form.current.reset();
           
         },
-        (error) => {
-          setFeedback('Oops! Something went wrong. Please try again.');
+      ).catch((error) => {
           console.log('FAILED...', error.text);
-        
-        },
-      );
+          setFeedback('Sorry, something went wrong. Please try again later.');
+      }).finally(() => {
+        setTimeout(() => {
+          setFeedback('');
+        }, 5000);
+      })
   };
 
   return (
     // Container with gradient background
-    <div className='min-w-full relative flex justify-center items-center min-h-screen mx-auto py-24 lg:py-36 bg-gradient-to-br from-[#dfe0e6] via-[#5e234f] to-[#0a1346]' id="container">
+    <div className='min-w-full relative flex justify-center items-center min-h-screen px-5 md:mx-auto py-24 lg:py-36 bg-gradient-to-br from-[#dfe0e6] via-[#5e234f] to-[#0a1346]' id="container">
       {/* Contact Form Container */}
-      <div className="rounded-2xl flex flex-col justify-between bg-white dark:bg-black lg:flex-row lg:justify-between lg:top-24 lg:w-[900px]">
+      <div className="rounded-2xl flex flex-col justify-between bg-white dark:bg-black lg:flex-row lg:justify-between lg:top-24 lg:w-[900px] ">
         {/* Left side of the form */}
-        <div className="lg:w-[60%]   rounded-tl-2xl justify-between rounded-bl-2xl flex  dark:bg-black dark:text-white p-5 lg:p-10">
+        <div className="lg:w-[60%]   rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none justify-between rounded-bl-2xl flex  dark:bg-black dark:text-white p-5 lg:p-10">
           <img className='max-h-[30px] mx-2 max-w-[30px]  brightness-150 ' src="https://img.icons8.com/ios-filled/50/228BE6/like--v1.png" alt="like--v1"/>
           <section className='w-[90%]'>
             <p className='font-bold text-xl font-poppins'>Hello, Let's get in touch</p>
@@ -66,8 +64,8 @@ function Contact() {
                       className='border-2  p-2 placeholder:text-black dark:placeholder:text-white border-black dark:border-gray-400 dark:bg-black outline-none'
                       id="message" cols="10" rows="10"></textarea>
                       <div className='flex justify-between items-center'>
-                        <div className='text-green-500 w-1/2 '>{feedback}</div>
-                      <button type="submit" className='bg-red-600 font-bold  before:w-[80%] w-fit text-white px-6 py-3 rounded-[30px]'>Send Message</button>
+                        <div className='text-gray-500 font-semibold w-1/2 '>{feedback}</div>
+                      <button type="submit"  className='bg-red-600 font-bold w-full before:w-[80%] md:w-fit text-white px-6 py-2 rounded-[30px]'>Send Message</button>
                       </div>
 
 

@@ -10,10 +10,12 @@ function Toggle() {
   return (
 
     <>
+    <div className="fixed right-5 top-10">
      <label class="switch">
       <input type="checkbox" onClick={onClickchange} class="input__check"/>
       <span class="slider"></span>
      </label>
+    </div>
      </>
   )
 }

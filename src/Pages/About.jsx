@@ -90,7 +90,12 @@ function About() {
 
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>About</h1>
            <p className='  font-bold border-solid border-3  border-gray-300'>Passionate Full Stack Developer with expertise in MERN Stack and strong proficiency in ReactJS. Excels in teamwork, fostering effective communication, and demonstrating brilliant interpersonal skills. Proven ability to collaborate with cross-functional teams to drive projects to success. Adept at coding and leveraging creativity to develop innovative solutions. Constantly exploring the digital realm and committed to staying at the forefront of tech innovation.</p>
-           <Link to='/contact'> <Button children='Contact Me' className='my-5' /> </Link>
+           <div className="flex items-center gap-5">
+             <a href="https://drive.google.com/file/d/1QigW8aPvmaJ5qyWPWTYs4o2WhBdlGl2I/view?usp=drive_link">
+                <Button children='Resume CV'/>
+            </a>
+             <Link to='/contact'> <Button children='Contact Me' className='my-5' /> </Link>
+           </div>
            <h1 className='font-semibold font-poppins text-gray-500 text-3xl'>Certification</h1>
            <div className='flex flex-row justify-start gap-2 p-5 lg:px-10 lg:gap-10  overflow-hidden'>
                <Cards head="PW SKills" para="Full Stack Devloper" view="View"  color="purple" link="https://learn.pwskills.com/certificate/c315d754-5b18-4876-bc80-0e9385d8db07"/>
@@ -99,14 +104,15 @@ function About() {
            </div>
            <h1 className='font-semibold text-gray-500 font-poppins text-3xl'>Skills</h1>
             <SlideTrack/>
-              
-           
+            
 
-
-           <h1 className='font-semibold text-gray-500 font-poppins text-3xl'>Education</h1>
-           <p className='font-bold border-solid border-3 border-gray-300'>B.Com from Gossner College Ranchi, India</p>
-
+            {/* Experience */}
+            <h1 className='font-semibold text-gray-500 font-poppins text-3xl'>Experience</h1>
+            <div className="flex">
+              <span className='block'><h3 className='inline text-gray-400 font-bold text-xl'>Web Developer intern</h3>||<h3 className='inline text-2xl font-bold '>Internpe</h3></span>
+            </div>
            {/* Button for social */}
+
           
          </div>  
         </div>

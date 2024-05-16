@@ -3,6 +3,7 @@ import { About, Contact, Footer, Header, Home, Project } from './components'
 import { Outlet } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import Theme, { Themeprovider } from './context/Theme'
+import Toggle from './components/Toggle'
 
 function Layout() {
   const [thememode, setThememode] = useState("dark")
@@ -37,6 +38,7 @@ function Layout() {
     <Themeprovider value={{thememode,darkmode,lightmode,mode}}>
        <Header/>
        <Outlet/>
+       <Toggle/>
        <Footer/>
     </Themeprovider>
   )

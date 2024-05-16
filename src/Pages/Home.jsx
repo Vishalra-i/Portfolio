@@ -93,9 +93,10 @@ function Home() {
               
             </div>
             {/* Button */}
-            <Link to="/about">
-                <Button children='About Me'/>
-            </Link>
+              <a href="https://drive.google.com/file/d/1QigW8aPvmaJ5qyWPWTYs4o2WhBdlGl2I/view?usp=drive_link">
+                <Button children='Resume CV'/>
+              </a>
+          
           </div>
         </div>
 
