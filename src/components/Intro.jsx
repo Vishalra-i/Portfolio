@@ -33,7 +33,7 @@ function Intro() {
       <div className='w-full lg:w-1/3 relative mt-10 lg:mt-0'>
         <hr className='w-full lg:w-[700px] border-2 border-blue-900 p-3 rounded-[30px] mx-auto my-10 lg:absolute lg:-left-96' />
         <div className="rounded-xl md:my-24 text-center mx-auto w-full lg:w-auto p-5 bg-white">
-          <img src="https://avatars.githubusercontent.com/u/135126334?v=4" alt="Profile" className='rounded-xl w-60 h-60 md:w-72 md:h-72 object-cover mx-auto' />
+          <img src="https://avatars.githubusercontent.com/u/135126334?v=4" alt="Vishal Rai" className='rounded-xl w-60 h-60 md:w-72 md:h-72 object-cover mx-auto' />
           <h3 className='text-xl md:text-2xl lg:text-3xl p-2 font-semibold'>Vishal Rai</h3>
           <div className="flex flex-wrap justify-center md:gap-4 mt-4">
             <Linkedin />
