@@ -7,7 +7,7 @@ import About from './About';
 import Intro from '../components/Intro';
 
 function Home() {
-  const [role, setRole] = useState("Developer");
+  const [role, setRole] = useState("Full Stack");
 
   // Using custom hook from Theme context
   const { darkmode, lightmode, mode, thememode } = useTheme();
