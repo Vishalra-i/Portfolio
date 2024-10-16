@@ -16,9 +16,9 @@ function Headlink() {
                <NavLink to="/contact" className={({isActive})=>` ${isActive ?"text-blue-300 ": "text-white"} text-sm md:text-xl`}>
                   Contact
                </NavLink>
-               <NavLink to="https://bloghunter.vercel.app/" className={({isActive})=>` ${isActive ?"text-blue-300 ": "text-white"} text-sm md:text-xl`}>
+               {/* <NavLink to="https://bloghunter.vercel.app/" className={({isActive})=>` ${isActive ?"text-blue-300 ": "text-white"} text-sm md:text-xl`}>
                   Blog
-               </NavLink>
+               </NavLink> */}
     </>
   )
 }
